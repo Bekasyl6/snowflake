@@ -1,0 +1,1 @@
+8 offline tests passed: authentication, SQL bindings, Unicode, asynchronous polling, SSE response, error redaction, NULL handling, parameter validation and SELECT 1 diagnostic. No live Snowflake/Render request was made.

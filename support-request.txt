@@ -1,0 +1,26 @@
+Subject: Cortex REST API denied with error 003001; AI_COMPLETE works in SQL
+
+Hello Snowflake Support,
+
+Please investigate Cortex REST API access for my account kvc90685, region AWS_US_EAST_1.
+
+A credit card is on file. AI_COMPLETE requests to claude-sonnet-4-5 and claude-opus-4-6 succeed in SQL, but requests through LiteLLM to the Cortex REST endpoint fail with:
+003001: "This account is not allowed to access this endpoint. Please contact Snowflake support."
+
+Request IDs:
+7c196218-538d-4b37-a763-cf2c78f8e169
+b4b1a480-fdd4-4838-b9be-4fd3899852d1
+
+Current settings:
+CORTEX_ENABLED_CROSS_REGION = AWS_GLOBAL
+CORTEX_MODELS_ALLOWLIST = ALL
+The service role has SNOWFLAKE.CORTEX_USER and SNOWFLAKE.CORTEX_REST_API_USER.
+No successful calls appear in CORTEX_REST_API_USAGE_HISTORY.
+
+Could you confirm the reason for this endpoint restriction and enable Cortex REST API if my account is eligible? Please check whether any trial-related restriction remains after the payment method was added.
+
+Please also confirm my current account billing status, whether SQL AI_COMPLETE and Cortex REST API inference use the remaining $400 promotional credits, and whether enabling this endpoint requires conversion to a paid account. I do not authorize a paid upgrade or any billing change through this request.
+
+I am evaluating Claude through an external chat application. This blocks my evaluation, but is not a production outage.
+
+Thank you.
